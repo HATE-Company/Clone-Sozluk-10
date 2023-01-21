@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Hate Company | News</title>
+  <link rel="stylesheet" href="./style.css">
+  <script src="./script.js"></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js'></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+form.example input[type=text] {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  width: 80%;
+  background: rgba(0, 0, 0, 0.05);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+form.example button {
+  float: left;
+  width: 20%;
+  padding: 10px;
+  background: #2196F3;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none;
+  cursor: pointer;
+}
+
+form.example button:hover {
+  background: #0b7dda;
+  content:"Search";
+}
+
+form.example::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+#navbar {
+  overflow: hidden;
+  background: rgba(0, 0, 0, 0.05);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+#navbar a {
+  float: right;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+#navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+#navbar a.active {
+  background-color: #04AA6D;
+  color: #fff;
+  border: 0;
+  outline: 0;
+  border-radius: 30px;
+  width: 30%;
+  cursor: pointer;
+}
+.sticky {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+.pagination a {
+  color: white;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+  transition: background-color .3s;
+  width: 12%;
+}
+
+.pagination a.active {
+  background-color: dodgerblue;
+  color: white;
+}
+</style>
+</head>
+<body>
+  
+<!-- partial:index.partial.html -->
+
+<div class="container" id="container">
+
+  <header>
+    <section class="window--buttons">
+      <div class="window__close"></div>
+
+      <div class="window__minimize"></div>
+
+      <div class="window__maximize"></div>
+      <div class="">
+         <br>
+       &nbsp; &nbsp;<h4 style="color:#fff;"><img src="hate_logo.png" style="vertical-align: center;width: 50px;height: 50px;border-radius: 50%;" width="32" height="32">
+      <p>HATE Company - News</p></h4>
+      </div>
+    </section>
+  </header>
+<br> <br>
+  <aside>
+    <div><br><br><br><div class="content">
+      <button><i class="active">Topics Dropdown</i></button>
+      <button id="sidebar-btn">Gaming</button>
+      <button id="sidebar-btn">Sports</button>
+      <button id="sidebar-btn">Television</button>
+      <button id="sidebar-btn">Celebrity</button>
+      <button id="sidebar-btn">Business</button>
+      <button id="sidebar-btn">More</button>
+    </div>
+
+    <div class="profile">
+      <img src="https://avatars.githubusercontent.com/u/80974013?s=40&v=4" alt="Profile Pic" class="profile--pic" />
+      <h1>Ufuk Yıldız</h1><br>
+    </div>
+  </aside>
+  
+  <div class="content">
+
+    <form class="example" action="/search.php">
+      <input type="text" placeholder="Search.." name="search">
+      <button id="sidebar-btn" type="submit"><i class="fa fa-search"></i></button>
+    </form>
+    <section class="updates">
+      <h1>Trends for you</h1>
+
+      <div class="update update-1">
+
+        <div class="updt-left">
+          <img src="https://zy1i5vssqm2tsodvos07.blob.core.windows.net/content/images/2022/5/101245_2.%20logo.png" alt="btcicon" />
+          <h1>Bitcoin</h1>
+          
+        </div>
+<div class=""></div>
+        <div class="buttons">
+          <a href="#" target="_warning">
+            <button>.. min ago</button>
+          </a>
+        </div>
+        
+      </div>
+
+      <div class="update">
+
+        <div class="updt-left">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Ethereum_logo_2014.svg/1257px-Ethereum_logo_2014.svg.png" alt="Ethereum icon" />
+          <h1>Ethereum</h1>
+        </div>
+
+        <div class="buttons">
+          <button style="color: lime;cursor: default">Readed</button>
+        </div>
+      </div>
+
+      <div class="update">
+
+        <div class="updt-left">
+          <img src="https://www.pngall.com/wp-content/uploads/10/Litecoin-Crypto-Logo-PNG-Clipart.png" alt="litecoin icon" />
+          <h1>Litecoin</h1>
+        </div>
+
+        <div class="buttons">
+          <a href="#" target="_warning">
+            <button>.. min ago</button>
+          </a>
+        </div>
+      </div>
+
+      <div class="update">
+
+        <div class="updt-left">
+          <img src="https://upload.wikimedia.org/wikipedia/tr/d/db/Dogecoin-logo.png" alt="doge icon" />
+          <h1>Dogecoin</h1>
+        </div>
+
+        <div class="buttons">
+          <a href="#" target="_warning">
+            <button>.. min ago</button>
+          </a>
+        </div>
+      </div>
+    </section>
+    <br>
+    <div class="ideas">
+      <div class="idea">
+      <img src="./Rectangle 55.png">
+      </div>
+      <div class="idea">
+        <img src="./Rectangle 56.png">
+      </div><br><br><br>&nbsp;&nbsp;&nbsp;
+      <div class="idea">
+        <img src="./Rectangle 59.png">
+      </div>
+    </div>
+    <div class="pagination">
+      <a href="#">&laquo;</a>
+      <a href="#">1</a>
+      <a class="active" href="#">2</a>
+      <a href="#">3</a>
+      <a href="#">4</a>
+      <a href="#">5</a>
+      <a href="#">6</a>
+      <a href="#">&raquo;</a>
+    </div>
+    
+    <section class="trending">
+      <h1>Trending</h1>
+
+      <div class="grid">
+        <span class="grid__app">
+          <h1>Kindle</h1>
+
+          <button>GET</button>
+        </span>
+
+        <span class="grid__app">
+          <h1>Slac</h1>
+
+          <button>GET</button>
+        </span>
+
+        <span class="grid__app">
+          <h1>Messi</h1>
+
+          <button>₺699</button>
+        </span>
+
+        <span class="grid__app">
+          <h1>CotEditor</h1>
+
+          <button>GET</button>
+        </span>
+
+        <span class="grid__app margin">
+          <h1>Twitter</h1>
+
+          <button>GET</button>
+        </span>
+
+        <span class="grid__app margin">
+          <h1>Notability</h1>
+
+          <button>GET</button>
+        </span>
+
+        <span class="grid__app margin">
+          <h1>NDTV</h1>
+
+          <button>GET</button>
+        </span>
+
+        <span class="grid__app margin">
+          <h1>Rummy</h1>
+
+          <button>GET</button>
+        </span>
+      </div>
+    </section>
+
+    <section class="links">
+      <a href="#">Privacy Policy -></a>
+
+      <a href="#">Terms and Conditions -></a>
+
+      <a href="#">Report Error -></a>
+
+      <a href="#">
+        About Us
+      </a>
+    </section><br>
+
+  </div>
+<footer>    <br>
+  
+  <div class="idea" id="navbar"><br>
+    <h3 style=""">Create an account to follow your favorite communities and start taking part in conversations.
+  <a class="active" href="./glasslogin.html">Login&NonBreakingSpace;</a>
+  <br>
+</div></footer>
+</div>
+
+<!-- partial -->
+  
+</body>
+</html>
