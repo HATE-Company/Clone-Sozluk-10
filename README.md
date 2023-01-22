@@ -4,3 +4,4 @@
 # Day 3:Builded Login Page on Local Device(Tested OK) and pushed on Github repo
 # Day 4:Glassmorphism CSS&JS based template clonned and modified
 # Day 5:Search Bar and images replaced on Home Page | Full Project Pushed GitHub
+For live preview visit : https://clone-sozluk-10.netlify.app
